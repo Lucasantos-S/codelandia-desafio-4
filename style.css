@@ -1,0 +1,170 @@
+/*Variáveis*/
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif; 
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+  
+.formurio-bg {
+     display: grid;    
+     height: 100vh;
+}
+  .contend {
+    display: none;
+    background: var(--white300);
+  }
+
+  .form {
+      display: flex;
+      flex-direction: column;
+      margin: 70px auto 0 auto;
+      max-width: 350px;
+  }
+  .form p {
+      font-family:'Merriweather', serif; 
+      font-style: normal;
+      color: #1A202C;
+      font-size: 1rem;
+      line-height: 20px;
+      margin-bottom: 7px;
+  }
+  .form h1 {
+    font-family:'Merriweather', serif; 
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.625rem;
+    margin-bottom: 30px;
+  }
+  .form label {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    margin: 10px 0;
+    color: var(--dark);
+  }
+  
+
+  .form input {
+    padding:  17px 20px;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+  }
+
+.info-login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+.btn-bg {
+    display: block;
+    
+}
+.btn-bg button {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    width: 350px;
+    padding: 17px 0 ;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: #04C35C;
+    color: var(--white);
+    cursor: pointer;
+}
+.btn-bg button + button {
+    background: #1A202C;
+    color: white
+}
+.btn-bg button span {
+  position: relative;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.cadastro p{
+margin-top:8.7rem ;
+text-align: center;
+}
+
+
+@media (min-width: 820px) {
+  .formurio-bg {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+
+  .contend {
+    display: flex;
+    align-items: center;
+    
+  }
+  .perfil {
+    margin: 0 auto;
+  }
+  .perfil img {
+    max-width: 400px;
+    
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+
+  }
+
+}
